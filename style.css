@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Hind Siliguri", serif;
+    height: 100vh;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #0A0A23;
+    padding: 5px;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+h1::after {
+    font-family: "Font Awesome 6 Free"; /* Specify Font Awesome */
+    font-weight: 900; /* Needed for some icons in Font Awesome 6 */
+    content: "\f21c"; /* The icon code */
+    margin-right: 5px; /* Adjust spacing as needed */
+    color: #fdb347; /* Icon color */
+   
+}
+
+h1{
+    font-weight: 500;
+}
+.gallery{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    gap: 12px;
+  
+}
+.gallery img{
+     width: 100%;
+     max-width: 400px;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 5px;
+   
+    
+}
+.gallery img:hover {
+    -webkit-box-shadow: 3px 4px 14px 5px rgba(0,0,0,0.67);
+    -moz-box-shadow: 3px 4px 14px 5px rgba(0,0,0,0.67);
+    box-shadow: 3px 4px 14px 5px rgba(0,0,0,0.67);
+    border: 2px solid #fdb347;
+}
